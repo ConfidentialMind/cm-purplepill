@@ -1,0 +1,12 @@
+[Unit]
+Description=CM PurplePill (ConfidentialMind Container GPU Monitor)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=cmpp
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
