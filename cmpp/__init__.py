@@ -15,7 +15,7 @@ __logo__ = """
             ░░|  | \/ |  |  |  |  |  |  |  |  |  |__|  |
              ░|__|    |__|  |__|  |__|  |__|   \_______|
       
-    ConfidentialMind Container GPU Monitor "CM PurplePill" (c)   https://confidentialmind.com
+    Container GPU Monitor "CM PurplePill" (c) 2025 ConfidentialMind Oy https://confidentialmind.com
 .
 """
 

@@ -1,14 +1,13 @@
 # ConfidentialMind Container GPU Monitor (CM PurplePill)
 
-An NVIDIA GPU metrics exporter, with Kubernetes pod-level GPU usage tracking.
+A GPU metrics exporter, with Kubernetes pod-level GPU usage tracking, not relying on explicit `<vendor.com>/gpu` resource declarations.
 
 ## Features
 
-- Collects GPU metrics using `nvidia-smi`
+- Collects GPU metrics using NVML
 - Maps GPU processes to Kubernetes pods
 - Exposes metrics in Prometheus format
-- No dependencies beyond Python 3.7+
-- Reliable continuous HTTP server
+- No dependencies beyond Python 3.7+ and NVML
 - Compatible with all K8s distributions
 - Tracks GPU usage by pods **without** explicit `nvidia.com/gpu` resource requests
 
