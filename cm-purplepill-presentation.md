@@ -3,13 +3,13 @@
 ## 1. Main Problem Being Solved
 
 - Standard Kubernetes GPU monitoring tools only track pods with explicit `nvidia.com/gpu` resource requests
-- Many applications utilise GPUs without declaring these resource requests
-- Creates significant monitoring gaps where GPU usage is effectively "invisible"
+- Some applications utilise GPUs without declaring these resource requests
+- Creates significant monitoring gaps where GPU usage is effectively "invisible" and/or untraceable. 
 
 ## 2. What is CM PurplePill?
 
 **Definition:**
-A lightweight Prometheus exporter for NVIDIA GPU metrics in Kubernetes environments that tracks pod-level GPU usage **without** requiring explicit GPU resource declarations.
+A lightweight Prometheus exporter for GPU metrics in Kubernetes environments that tracks pod-level GPU usage **without** requiring explicit GPU resource declarations.
 
 **Key Features:**
 - Identifies GPU usage by containers with no explicit `nvidia.com/gpu` resource declarations

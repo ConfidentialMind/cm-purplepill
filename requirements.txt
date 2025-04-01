@@ -1,2 +1,0 @@
-# The implementation uses only standard library modules
-# No external dependencies required
