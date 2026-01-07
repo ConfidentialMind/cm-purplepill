@@ -29,7 +29,7 @@ WORKDIR /app
 
 # Copy CM PurplePill files
 COPY cmpp/ /app/cmpp/
-COPY setup.py MANIFEST.in README.md requirements.txt /app/
+COPY setup.py MANIFEST.in README.md /app/
 
 # Install the package
 RUN pip3 install --no-cache-dir .

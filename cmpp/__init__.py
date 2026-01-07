@@ -18,7 +18,7 @@ limitations under the License.
 """
 
 name = "cmpp"
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 __logo__ = """
 .
       ░░       __      __                            __

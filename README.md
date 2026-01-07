@@ -263,6 +263,16 @@ Create a container environment similar to the Dockerfile provided with CM Purple
 3. Install CM PurplePill
 4. Ensure the container has access to NVIDIA devices and can run `nvidia-smi`
 
+## Docker build (multiarch)
+
+```bash
+docker run --privileged --rm tonistiigi/binfmt --install all
+docker buildx create --use --name multi-arch-builder
+docker buildx build --platform linux/amd64,linux/arm64 .
+# or combined with "push"
+docker buildx build --platform linux/amd64,linux/arm64 . --push --tag <registry>/cm-purplepill:x.x.x
+```
+
 ## Configuration
 
 The exporter can be configured using command-line arguments:
